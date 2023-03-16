@@ -105,7 +105,7 @@ const ForgotPassword = () => {
                   <ReCAPTCHA
                     ref={captcha}
                     /* TODO move token to environment file */
-                    sitekey={process.env.GOOGLE_RECAPTCHA_KEY}
+                    sitekey={process.env.REACT_APP_GOOGLE_RECAPTCHA_KEY}
                     onChange={() => {
                       if (captcha.current.getValue()) {
                         setFieldValue('captcha', true);
