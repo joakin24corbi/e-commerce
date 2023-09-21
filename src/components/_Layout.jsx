@@ -1,7 +1,7 @@
 import { styled } from '@mui/material/styles';
 import { IconButton as MIconButton } from '@mui/material';
 
-export const AppContent = styled('div')(() => ({
+export const AppContent = styled('main')(() => ({
   marginTop: '124px',
   marginBottom: '80px',
   minHeight: '59vmin'

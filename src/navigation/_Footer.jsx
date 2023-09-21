@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Container } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-export const FooterDiv = styled('div')(({ theme }) => ({
+export const FooterDiv = styled('footer')(({ theme }) => ({
   backgroundColor: theme.palette.background.footer,
   padding: theme.spacing(8, 0)
 }));

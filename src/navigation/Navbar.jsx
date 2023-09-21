@@ -148,7 +148,7 @@ const Navbar = () => {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <>
       <StyledAppBar position='fixed'>
         <DefaultBackground>
           <StyledContainer maxWidth={settings.maxWidth}>
@@ -231,7 +231,7 @@ const Navbar = () => {
         <Gradient />
       </StyledAppBar>
       {renderMenu}
-    </Box>
+    </>
   );
 }
 

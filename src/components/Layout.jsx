@@ -26,13 +26,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className='App'>
-        <Navbar />
-        <AppContent>
-          {children}
-        </AppContent>
-        <Footer />
-      </div>
+      <Navbar />
+      <AppContent>
+        {children}
+      </AppContent>
+      <Footer />
       {showButton && (
         <div className='scrollToTop'>
           <IconButton className='scrollToTop-button' onClick={handleScrollToTop}>

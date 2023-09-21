@@ -11,7 +11,7 @@ import {
 export const StyledAppBar = styled(AppBar)(() => ({
   backgroundColor: 'transparent',
   boxShadow: 'none',
-  color: 'inherit'
+  color: 'inherit',
 }));
 
 export const DefaultBackground = styled('div')(({ theme }) => ({
@@ -98,7 +98,15 @@ export const ProfileIconButton = styled(IconButton)(({ theme }) => ({
 }));
 
 export const Gradient = styled('div')(({ theme }) => ({
+  position: 'fixed',
+  top: 64,
+  left: 0,
   width: '100%',
   height: '80px',
-  background: `linear-gradient(to bottom, ${theme.palette.background.default}, transparent)`
+  background: `linear-gradient(to bottom, ${theme.palette.background.default}, transparent)`,
+  pointerEvents: 'none',
+
+  [theme.breakpoints.down('sm')]: {
+    top: 56
+  }
 }));

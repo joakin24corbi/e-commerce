@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store, persistor } from 'store';
 import { PersistGate } from 'redux-persist/es/integration/react';
-import SplashScreen from 'views/splashScreen/SplashScreen';
+import SplashScreen from 'views/splash-screen/SplashScreen';
 import { BrowserRouter } from 'react-router-dom';
 import { SettingsProvider } from 'contexts/SettingsContext';
 import { StyledEngineProvider } from '@mui/styled-engine';
