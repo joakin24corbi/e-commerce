@@ -19,9 +19,10 @@ module.exports = {
         es2020: true,
         jest: true,
     },
-    extends: ['eslint:recommended'],
+    extends: ['eslint:recommended', 'plugin:@typescript-eslint/eslint-recommended'],
     overrides: [],
-    plugins: ['prettier', 'react', 'import'],
+    parser: '@typescript-eslint/parser',
+    plugins: ['prettier', 'react', '@typescript-eslint', 'import'],
     rules: {
         'prettier/prettier': 'error',
         'react/display-name': 'off',
@@ -30,6 +31,7 @@ module.exports = {
         'react/jsx-max-props-per-line': [1, { maximum: 1, when: 'multiline' }],
         'react/jsx-first-prop-new-line': [1, 'multiline'],
         'no-unused-vars': 'error',
+        '@typescript-eslint/no-unused-vars': 'error',
         // turn on errors for missing imports
         'import/no-unresolved': 'error',
         // 'import/no-named-as-default-member': 'off',
